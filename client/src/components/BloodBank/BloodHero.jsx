@@ -38,19 +38,19 @@ const BloodHero = () => {
 const DummyNumbers = () => {
   return (
     <div className="flex justify-between mx-20 mt-8 ">
-      <div className="bg-white w-50 h-50 p-6 rounded-lg text-red-600 text-center flex flex-col justify-center items-center shadow-md transition duration-300 hover:shadow-xl border border-red-600">
+      <div className="bg-white w-50 h-50 p-6 rounded-lg text-red-600 text-center flex flex-col justify-center items-center shadow-xl transition duration-300 ">
         <p className="text-4xl font-bold">123</p>
         <p>Approved Camps</p>
       </div>
-      <div className="bg-white w-50 h-50 p-6 rounded-lg text-red-600 text-center flex flex-col justify-center items-center shadow-md transition duration-300 hover:shadow-xl border border-red-600">
+      <div className="bg-white w-50 h-50 p-6 rounded-lg text-red-600 text-center flex flex-col justify-center items-center shadow-xl transition duration-300 hover:shadow-3xl ">
         <p className="text-4xl font-bold">456</p>
         <p>Blood Unit Collected</p>
       </div>
-      <div className="bg-white w-50 h-50 p-6 rounded-lg text-red-600 text-center flex flex-col justify-center items-center shadow-md transition duration-300 hover:shadow-xl border border-red-600">
+      <div className="bg-white w-50 h-50 p-6 rounded-lg text-red-600 text-center flex flex-col justify-center items-center shadow-xl transition duration-300 hover:shadow-xl">
         <p className="text-4xl font-bold">789</p>
         <p>Donors Registered</p>
       </div>
-      <div className="bg-white w-50 h-50 p-6 rounded-lg text-red-600 text-center flex flex-col justify-center items-center shadow-md transition duration-300 hover:shadow-xl border border-red-600">
+      <div className="bg-white w-50 h-50 p-6 rounded-lg text-red-600 text-center flex flex-col justify-center items-center shadow-xl transition duration-300 hover:shadow-xl">
         <p className="text-4xl font-bold">1011</p>
         <p>Blood Units Collected</p>
       </div>

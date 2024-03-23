@@ -5,6 +5,7 @@ import HostCamp from '../../components/BloodBank/HostCamp'
 import Volunteer from '../../components/BloodBank/Volunteer'
 import BBNavbar from '../../components/BloodBank/BBNavbar'
 import BloodBankPage from '../../components/BloodBank/BloodHero'
+import HostBloodBankForm from '../../components/BloodBank/HostBloodBankForm'
 
 const BloodHome = () => {
   return (
@@ -14,6 +15,7 @@ const BloodHome = () => {
      <BloodBankPage/>
      <DonateBlood/>
      <HostCamp/>
+     <HostBloodBankForm/>
      <Volunteer/>
     </div>
     </div>
