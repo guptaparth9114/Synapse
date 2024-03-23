@@ -40,10 +40,10 @@ const Navbar = () => {
             className="border-b-2 border-black text-black mr-4 focus:outline-none"
           />
         )}
-        <button className="text-white border-b-2 border-transparent hover:border-black text-black hover:text-black">
+        <button className="text-white border-b-2 border-transparent hover:border-black  hover:text-black">
           Donate
         </button>
-        <button className="text-white border-b-2 border-transparent hover:border-black text-black hover:text-black">
+        <button className="text-white border-b-2 border-transparent hover:border-black  hover:text-black">
           Sign In / Sign Up
         </button>
       </div>
