@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import Register from "./pages/register";
 import Home from "./pages/Home";
+import BloodHome from "./pages/BloodBankPage/BloodHome";
 
 // import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 // import { useContext } from "react";
@@ -21,8 +22,7 @@ function App() {
   const Layout=()=>{
     return (
       // <QueryClientProvider client={queryClient}>
-       <div className="bg-[#86B6F6]">
-      <Navbar/>
+       <div>
         <Outlet/>
         </div>
       //  </QueryClientProvider>
@@ -39,6 +39,10 @@ function App() {
         {
           path:"/",
           element:<Home/>
+        },
+        {
+          path:"/blood",
+          element:<BloodHome/>
         },
        
       ]
