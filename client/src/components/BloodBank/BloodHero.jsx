@@ -4,7 +4,7 @@ const BloodHero = () => {
   return (
     <div className="flex justify-center">
       <div className="relative">
-        <img src="assets/bb2.jpg" alt="" className="w-[90%] h-[100%] mx-20 shadow-lg pt-[60px] relative" />
+        <img src="assets/bb2.jpg" alt="" className="w-[90%] h-[100%] mx-20 shadow-lg pt-[72px] relative" />
         <div className="absolute top-[20%] left-[10%] right-0 bg-transparent p-4 text-center">
         <p className="text-xl font-bold text-red-600">"Finding a blood bank is the first step towards saving lives."</p>
       </div>
