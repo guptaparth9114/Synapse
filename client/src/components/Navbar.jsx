@@ -8,11 +8,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between py-4 px-6 bg-transparent absolute top-0 left-0 w-full z-50 border-b border-black">
+    <nav className="flex items-center justify-between py-4 px-6 bg-transparent absolute top-0 left-0 w-full z-50 border-b border-white">
       <div className="flex mr-10 ml-5 cursor-pointer" onClick={toggleSearch}>
-        <h2 className="font-mono mr-4">Subjects</h2>
+        <h2 className="text-white font-mono mr-4">Subjects</h2>
         <svg
-          className="w-4 h-4 text-black fill-current"
+          className="w-4 h-4 text-white fill-current"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -21,7 +21,7 @@ const Navbar = () => {
       </div>
       <div className="mr-6 cursor-pointer" onClick={toggleSearch}>
         <svg
-          className="w-6 h-6 text-black fill-current"
+          className="w-6 h-6 text-white fill-current"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -30,7 +30,7 @@ const Navbar = () => {
       </div>
       <div className="flex items-center justify-center flex-1">
         {/* Centered Heading */}
-        <h1 className="text-black font-bold text-xl">Blood Donation</h1>
+        <h1 className="text-white font-bold text-xl">Blood Donation</h1>
       </div>
       <div className="flex items-center space-x-4 mr-4">
         {searchVisible && (
@@ -40,10 +40,10 @@ const Navbar = () => {
             className="border-b-2 border-black text-black mr-4 focus:outline-none"
           />
         )}
-        <button className="border-b-2 border-transparent hover:border-black text-black hover:text-black">
+        <button className="text-white border-b-2 border-transparent hover:border-black text-black hover:text-black">
           Donate
         </button>
-        <button className="border-b-2 border-transparent hover:border-black text-black hover:text-black">
+        <button className="text-white border-b-2 border-transparent hover:border-black text-black hover:text-black">
           Sign In / Sign Up
         </button>
       </div>
