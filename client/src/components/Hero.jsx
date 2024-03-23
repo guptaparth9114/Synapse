@@ -5,9 +5,7 @@ import r from "../components/r.jpg";
 const Hero = () => {
   const gradientBorder = {
     borderImage: 'linear-gradient(to right,#004d40, #303f9f)',
-    borderImageSlice: 1,
-  
-    
+    borderImageSlice: 1
   };
 
   return (
@@ -15,7 +13,7 @@ const Hero = () => {
       <div className="w-screen h-screen flex items-center justify-center relative">
         <div className="absolute inset-0 bg-black opacity-70"></div>
         <img src={r} alt="Background" className="object-cover w-full h-full" />
-        <div className="absolute inset-0 flex items-center justify-center text-white text-3xl  font-semibold m-2 p-4 flex-col">
+        <div className="absolute inset-0 flex items-center justify-center text-white text-3xl font-semibold m-2 p-4 flex-col">
           <div className="text-white-800 font-mono mb-8 border-4 "  style={gradientBorder} >
             <h1 className="text-4xl mb-8 ">
             <em>Your Wellness, Our Priority: Empowering Health, Enriching Lives.</em></h1></div>
