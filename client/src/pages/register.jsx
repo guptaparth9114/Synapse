@@ -41,7 +41,7 @@ const Register = () => {
     <div>
       <div className="fixed inset-0 flex items-center justify-center">
         <img
-          src="/assets/images/heross1.png"
+          src=""
           alt="Quiz"
           className="fixed inset-0 object-cover w-full h-full"
         />
