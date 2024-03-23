@@ -1,15 +1,17 @@
-import { useState } from 'react'
-
+// App.js
+import React from 'react';
+import Navbar from './components/Navbar';
+import FourPartsLayout from './pages/FourPartsLayout';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-    <h1>HII</h1>
-       
-    </>
-  )
+    <div className="flex flex-col h-screen">
+      <Navbar />
+      <div className="flex-grow">
+        <FourPartsLayout />
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
