@@ -3,11 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [searchVisible, setSearchVisible] = useState(false);
-
   const toggleSearch = () => {
     setSearchVisible(!searchVisible);
-  };
-
+  }; 
   return (
     <nav className="flex items-center justify-between py-4 px-6 bg-transparent absolute top-0 left-0 w-full z-50 border-b border-white">
       <div className="flex mr-10 ml-5 cursor-pointer" onClick={toggleSearch}>
@@ -41,12 +39,12 @@ const Navbar = () => {
             className="border-b-2 border-black text-black mr-4 focus:outline-none"
           />
         )}
-        <button className="text-white border-b-2 border-transparent hover:border-black  hover:text-black">
+        <Link to="/blood"><button className="text-white border-b-2 border-transparent hover:border-black  hover:text-black">
           Donate
-        </button>
-        <Link to="/register" className="text-white border-b-2 border-transparent hover:border-black  hover:text-black">
+        </button></Link>
+       <Link to="/register"><button className="text-white border-b-2 border-transparent hover:border-black  hover:text-black">
           Sign In / Sign Up
-        </Link>
+        </button></Link>
       </div>
     </nav>
   );
