@@ -33,7 +33,7 @@ const Hero = () => {
                 <span className="text-s">Print Your Prescriptions</span>
               </button>
               <button className="w-[100%] flex flex-col justify-center items-center rounded-full shadow-lg  m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 border-4 border-white">
-                <span className="text-s">My Calendar</span>
+                <span className="text-s">My Appointment</span>
               </button>
             </div>
           </div>

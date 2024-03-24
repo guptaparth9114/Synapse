@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const BBNavbar = () => {
   const [searchVisible, setSearchVisible] = useState(false);
@@ -46,9 +47,9 @@ const BBNavbar = () => {
         <button className="text-red-600 border-b-2 border-transparent hover:border-black  hover:text-black">
           Host a Blood Donation Camp
         </button>
-        <button className="text-white border-b-2 rounded-lg border-transparent bg-red-600 hover:border-red-600 hover:bg-white hover:text-red-600 p-2">
-          Sign In / Sign Up
-        </button>
+        <Link to="/bbregister"><button className="text-white border-b-2 rounded-lg border-transparent bg-red-600 hover:border-red-600 hover:bg-white hover:text-red-600 p-2">
+         Register Your Blood Bank
+        </button></Link>
       </div>
     </nav>
   );

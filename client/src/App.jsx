@@ -13,21 +13,23 @@ import BloodHome from "./pages/BloodBankPage/BloodHome";
 import HostBloodBankForm from "./components/BloodBank/HostBloodBankForm";
 import BloodDonationCamps from "./components/BloodBank/BloodDonationCamps";
 
-// import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-// import { useContext } from "react";
-// import { AuthContext } from "./context/authContext";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { useContext } from "react";
+import { AuthContext } from "./context/authContext";
+import BBRegister from "./pages/BloodBankPage/BBRegister";
+import DisplayBB from "./pages/BloodBankPage/DisplayBB";
 
 
 function App() {
-  // const {currentUser}=useContext(AuthContext);
-  // const queryClient=new QueryClient();
+  const {currentUser}=useContext(AuthContext);
+  const queryClient=new QueryClient();
   const Layout=()=>{
     return (
-      // <QueryClientProvider client={queryClient}>
+      <QueryClientProvider client={queryClient}>
        <div>
         <Outlet/>
         </div>
-      //  </QueryClientProvider>
+       </QueryClientProvider>
     );
 
   };
@@ -53,6 +55,14 @@ function App() {
         {
           path:"/donate-blood",
           element:<BloodDonationCamps/>
+        },
+        {
+          path:"/bbregister",
+          element:<BBRegister/>
+        },
+        {
+          path:"/getbank",
+          element:<DisplayBB/>
         },
        
       ]

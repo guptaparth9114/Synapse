@@ -29,7 +29,7 @@ const BloodDonationCamps = () => {
       // Validate form data (you can add your own validation logic here)
 
       // Send POST request to register user for the selected blood donation camp
-    //   await axios.post('http://example.com/register', formData);
+      await axios.post('http://localhost:8800/api/donor/register', formData);
   console.log(formData)
       // Reset form data after successful registration
       setFormData({

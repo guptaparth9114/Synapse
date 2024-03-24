@@ -1,6 +1,7 @@
+
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-// import axios from 'axios';
+import axios from 'axios';
 
 const Register = () => {
   const [inputs, setInputs] = useState({
@@ -28,13 +29,12 @@ const Register = () => {
 
   const handleClick = async (e) => {
     e.preventDefault();
-
-    // try {
-    //   await axios.post('http://localhost:8800/api/auth/register', inputs);
-    //   navigate('/');
-    // } catch (err) {
-    //   setErr(err.response.data);
-    // }
+    try {
+      await axios.post('http://localhost:8800/api/auth/register', inputs);
+      navigate('/');
+    } catch (err) {
+      setErr(err.response.data);
+    }
   };
 
   return (

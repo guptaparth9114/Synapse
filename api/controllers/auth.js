@@ -9,15 +9,26 @@ export const register=(req,res)=>{
         console.log(req.body.password)
         const salt=bcrypt.genSaltSync(10);
   const hashPassword=bcrypt.hashSync(req.body.password,salt)
-   const q="INSERT INTO user(username,email,password,name,contactno,type) VALUE (?)"
-   const values=[req.body.username,req.body.email,hashPassword,req.body.name,req.body.contactno,req.body.usertype]
+  console.log(req.body)
+   const q="INSERT INTO user(username,email,password,name,contactno,type,experience,foE,verifydetails,currentemployer) VALUE (?)"
+   const values=[req.body.username,req.body.email,hashPassword,req.body.name,req.body.contactno,req.body.usertype,req.body.experience,req.body.fieldofExpertise,req.body.verificationDetails,req.body.hospital]
    db.query(q,[values],(err,data)=>{
-    if(err) return res.status(500).json(err)
+    if(err) {console.log (err)
+        return res.status(500).json(err)}
     return res.status(200).json("User has been created");
    })
    
 })
-  
+// id int(11) AI PK 
+// email varchar(150) 
+// username varchar(105) 
+// name varchar(105) 
+// password varchar(105) 
+// type varchar(45) 
+// experience int(11) 
+// foE varchar(105) 
+// verifydetails varchar(105) 
+// currentemployer varchar(150) 
 
 }
 export const login=(req,res)=>{
