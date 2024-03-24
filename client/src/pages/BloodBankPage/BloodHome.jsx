@@ -14,10 +14,10 @@ const BloodHome = () => {
       <BBNavbar/>
     <div className="flex flex-col justify-center">
      <BloodBankPage/>
+     <BloodStats/>
      <DonateBlood/>
-    <BloodStats/>
      <HostCamp/>
-     <HostBloodBankForm/>
+     
      <Volunteer/>
     </div>
     </div>

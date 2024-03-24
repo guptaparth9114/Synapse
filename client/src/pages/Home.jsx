@@ -2,8 +2,10 @@ import React from 'react'
 import Hero from '../components/Hero'
 import BloodDirect from '../components/BloodDirect'
 import Navbar from '../components/Navbar'
+import AppointCalendar from '../components/AppointCalendar'
 import Footer from '../components/Footer'
-import Accordion from '../components/Accordion'
+import Contact from '../components/Contact';
+
 
 
 const Home = () => {
@@ -13,8 +15,10 @@ const Home = () => {
         <Navbar/>
       <Hero/>
       <BloodDirect/>
-      <Accordion/>
+      <AppointCalendar/>
+      <Contact/>
       <Footer/>
+      
     </div>
   )
 }
