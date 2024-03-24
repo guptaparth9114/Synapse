@@ -17,7 +17,6 @@ const BloodHome = () => {
      <BloodStats/>
      <DonateBlood/>
      <HostCamp/>
-     
      <Volunteer/>
     </div>
     </div>
