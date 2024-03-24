@@ -10,6 +10,7 @@ import {
 import Register from "./pages/register";
 import Home from "./pages/Home";
 import BloodHome from "./pages/BloodBankPage/BloodHome";
+import HostBloodBankForm from "./components/BloodBank/HostBloodBankForm";
 
 // import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 // import { useContext } from "react";
@@ -43,6 +44,10 @@ function App() {
         {
           path:"/blood",
           element:<BloodHome/>
+        },
+        {
+          path:"/host-blood-bank",
+          element:<HostBloodBankForm/>
         },
        
       ]
