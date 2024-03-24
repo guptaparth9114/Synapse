@@ -1,6 +1,7 @@
 
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const BloodDirect = () => {
   return (
@@ -14,9 +15,9 @@ const BloodDirect = () => {
         <h1 className="text-white text-3xl font-bold mb-8 "><em>"The blood you donate gives someone another chance at life. One day that someone may be a close relative, a friend, a loved one—or even you."</em></h1>
 
         {/* Button */}
-        <button className="bg-white text-black px-10 py-4 rounded-md shadow-lg hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 border-4 border-yellow ">
+        <Link to="/blood" className="bg-white text-black px-10 py-4 rounded-md shadow-lg hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 border-4 border-yellow ">
          <h2 className="font-bold"> Visit Blood Bank portal </h2>
-        </button>
+        </Link>
       </div>
     </div>
   );
