@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [searchVisible, setSearchVisible] = useState(false);
@@ -43,9 +44,9 @@ const Navbar = () => {
         <button className="text-white border-b-2 border-transparent hover:border-black  hover:text-black">
           Donate
         </button>
-        <button className="text-white border-b-2 border-transparent hover:border-black  hover:text-black">
+       <Link to="/register"><button className="text-white border-b-2 border-transparent hover:border-black  hover:text-black">
           Sign In / Sign Up
-        </button>
+        </button></Link>
       </div>
     </nav>
   );

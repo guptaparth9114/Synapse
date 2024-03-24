@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 const Hero = () => {
   const gradientBorder = {
     borderImage: 'linear-gradient(to right,#004d40, #303f9f)',
@@ -19,10 +20,10 @@ const Hero = () => {
             <em>Your Wellness, Our Priority: Empowering Health, Enriching Lives.</em></h1></div>
           <div className="flex flex-row space-x-8">
             <div className="flex flex-col">
-              <button className="w-[100%] flex flex-col justify-center items-center rounded-full shadow-lg m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 border-4 border-white"  >
+             <Link to="/login"> <button className="w-[100%] flex flex-col justify-center items-center rounded-full shadow-lg m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 border-4 border-white"  >
                 <span className="text-s">Login</span>
                 {/* <span className="text-xs">For Patient as well as Doctor</span> */}
-              </button>
+              </button></Link> 
               <button className="w-[100%] flex flex-col justify-center items-center rounded-full shadow-lg m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 border-4 border-white">
                 <span className="text-s">Find your Doctor</span>
               </button>

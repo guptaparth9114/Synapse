@@ -1,6 +1,6 @@
 import express from "express";
 import multer from "multer";
-
+import authRoutes from "./routes/auth.js"
 import cors from "cors"
 import cookieParser from "cookie-parser"
 const app=express();
@@ -23,7 +23,7 @@ const storage = multer.diskStorage({
   
   const upload = multer({ storage: storage })
 app.use(cookieParser())
-// app.use("/api/auth",authRoutes);
+app.use("/api/auth",authRoutes);
 // app.use("/api/user",userRoutes);
 // app.use("/api/property",propRoutes)
 app.use("/api/upload",upload.single("file"),(req,res)=>{
